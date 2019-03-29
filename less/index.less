@@ -72,9 +72,12 @@ body {
 
 /* Mixins */
  .border {
-	 border: 1px solid #66cc99;
+	 border: 3px solid #66cc99;
  }
 
+ .background {
+	 background: white;
+ }
 
 /*  */
 .list-content {
@@ -115,9 +118,21 @@ body {
 		vertical-align: middle;
 	}
 
+	.picture-resume span {
+		display: table-cell;
+		vertical-align: middle;
+		position: relative;
+		margin: 0 auto;
+		z-index: 10;
+		text-align: center;
+	  }
+
+
+
 	 .picture img {
 		border-radius: 50%;
 		width: 130px;
+		
 	}
 
 	h1 {
@@ -133,10 +148,113 @@ body {
 	li {
 		margin-bottom: 10px;
 	}
+
+	.contact-info {
+		margin-top: 150px;
+  		font-weight: 300;
+	}
+
+	.list-titles {
+		float: left;
+		text-align: right;
+		padding-right: 1rem;
+		font-weight: 600;
+		width: 40%;
+		color: #4a4e51;
+	}
+
+	.list-content {
+		float: left;
+		width: 60%;
+		text-align: left;
+		font-weight: 300;
+	}
+
+	.contact-presentation {
+		margin-top: 70px;
+		margin-bottom: 70px;
+	}
 	@media (max-width: 500px) {
-		.profile{
+		.profile .picture img{
 		width: 100%;
 	  }
 	}
 }
+
+.experience {
+	background: #3d3e42;
+	width: 60%;
+	float: left;
+	position: relative;
+	color: #9099a0;
+	font-weight: 300;
+	min-height: 100%;
+	min-height: 100vh;
+	.border;
+	
+
+	h3.experience-title {
+		color: #66cc99;
+		text-align: left;
+		text-transform: uppercase;
+		font-size: 1.2em;
+		margin-bottom: 20px;
+		font-weight: 400;
+		text-align: center;
+	  }
+
+	  .company-wrapper {
+		width: 30%;
+		float: left;
+		text-align: left;
+		padding-right: 5%;
+		margin-bottom: 60px;
+	  }
+
+	  .job-wrapper {
+		width: 70%;
+		float: left;
+		text-align: left;
+		padding-right: 5%;
+		margin-bottom: 60px;
+	  }
+
+	  .experience-title {
+		color: white;
+		margin-bottom: 15px;
+	  }
+
+	  .section-padding {
+		padding: 60px 60px 40px 40px;
+	  }
+	  
+	}
+
+	.section-wrapper {
+		width: 100%;
+		float: left;
+		text-align: left;
+		color: #9099a0;
+		font-weight: 300;
+		margin-bottom: 20px;
+		
+
+		h3.section-title {
+			color: #66cc99;
+			text-align: left;
+			text-transform: uppercase;
+			font-size: 1.2em;
+			margin-bottom: 20px;
+			margin-top: 0;
+			font-weight: 400;
+			text-align: center;
+		  }
+
+		  .skill {
+			margin-bottom: 10px;
+			position: relative;
+			text-align: center
+		  }
+	  }
+
 
