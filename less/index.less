@@ -80,6 +80,16 @@ body {
  }
 
 /*  */
+.clearfix::after, .clearfix::before {
+	content: " ";
+	display: table;
+  }
+  
+  .clearfix::after {
+	clear: both;
+  }
+  
+
 .list-content {
 	a {
 		color: @link-color;
@@ -118,7 +128,7 @@ body {
 		vertical-align: middle;
 	}
 
-	.picture-resume span {
+	.picture span {
 		display: table-cell;
 		vertical-align: middle;
 		position: relative;
@@ -133,6 +143,7 @@ body {
 		border-radius: 50%;
 		width: 130px;
 		
+		
 	}
 
 	h1 {
@@ -143,6 +154,7 @@ body {
 		text-transform: uppercase;
 		line-height: 1em;
 		padding-top: 40px;
+	}
 	}
 
 	li {
@@ -175,10 +187,52 @@ body {
 		margin-bottom: 70px;
 	}
 	@media (max-width: 500px) {
-		.profile .picture img{
+		.profile .resume-picture-wrapper{
 		width: 100%;
+
+		h1 {
+			padding-top: 20px;
+			font-size: 1.8em;
+		}
+
+		.picture img {
+			width: 50px;
+		}
+		
+		.picture {
+			width: 75px;
+			height: 75px;;
+		}
+
+		.contact-info {
+			margin-top: 55px;
+		}
+
+		.contact-presentation {
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		.experience .company-wrapper {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		.experience .job-wrapper {
+			width: 100%;
+			margin-bottom: 40px;
+		}
+		
+		.section-padding {
+			padding: 40px 10% 20px 5%;
+		}
+
+		.section-wrapper {
+			width: 100%;
+		}
 	  }
 	}
+	
 }
 
 .experience {
@@ -256,5 +310,4 @@ body {
 			text-align: center
 		  }
 	  }
-
-
+	  
