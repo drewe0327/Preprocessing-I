@@ -1,1 +1,203 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+/* variables */
+/* Mixins */
+.border {
+  border: 1px solid #66cc99;
+}
+/*  */
+.list-content a {
+  color: #66cc99;
+  text-decoration: none;
+}
+.resume-container {
+  position: relative;
+  text-align: center;
+  height: 100%;
+}
+.container {
+  min-height: 600px;
+}
+.profile {
+  background: #fff;
+  width: 40%;
+  float: left;
+  color: #9099a0;
+}
+.profile .name-wrapper {
+  float: left;
+  width: 60%;
+}
+.profile .picture {
+  width: 220px;
+  height: 220px;
+  background-size: cover;
+  margin-right: 0px;
+  display: table;
+  position: relative;
+  vertical-align: middle;
+}
+.profile .picture img {
+  border-radius: 50%;
+  width: 130px;
+}
+.profile h1 {
+  font-size: 2.5em;
+  text-align: left;
+  font-family: 'Varela Round', sans-serif;
+  color: #4a4e51;
+  text-transform: uppercase;
+  line-height: 1em;
+  padding-top: 40px;
+}
+.profile li {
+  margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .profile .profile {
+    width: 100%;
+  }
+}
