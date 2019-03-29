@@ -49,11 +49,239 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+*, *::after, *::before {
+  box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+  height: 100%;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* variables */
+
+@link-color: #66cc99;
+
+
+/* Mixins */
+ .border {
+	 border: 3px solid #66cc99;
+ }
+
+ .background {
+	 background: white;
+ }
+
+/*  */
+.clearfix::after, .clearfix::before {
+	content: " ";
+	display: table;
+  }
+  
+  .clearfix::after {
+	clear: both;
+  }
+  
+
+.list-content {
+	a {
+		color: @link-color;
+		text-decoration: none;
+	}
+}
+
+.resume-container {
+	position: relative;
+	text-align: center;
+	height: 100%;
+}
+
+.container {
+	min-height: 600px;
+}
+
+.profile {
+	background: #fff;
+	width: 40%;
+	float: left;
+	color: #9099a0;
+
+	.name-wrapper {
+		float: left;
+		width: 60%;
+	}
+
+
+	 span {
+		display: table-cell;
+		vertical-align: middle;
+		position: relative;
+		margin: 0 auto;
+		z-index: 10;
+		text-align: center;
+	  }
+
+
+	.name-wrapper h1 {
+		font-size: 2.5em;
+		text-align: center;
+		font-family: 'Varela Round', sans-serif;
+		color: #4a4e51;
+		text-transform: uppercase;
+		line-height: 1em;
+		padding-top: 40px;
+	}
+	}
+
+	li {
+		margin-bottom: 10px;
+	}
+
+	.contact-info {
+		margin-top: 150px;
+  		font-weight: 300;
+	}
+
+	.list-titles {
+		float: left;
+		text-align: right;
+		padding-right: 1rem;
+		font-weight: 600;
+		width: 40%;
+		color: #4a4e51;
+	}
+
+	.list-content {
+		float: left;
+		width: 60%;
+		text-align: left;
+		font-weight: 300;
+	}
+
+	.contact-presentation {
+		margin-top: 70px;
+		margin-bottom: 70px;
+	}
+	@media (max-width: 500px) {
+		.profile {
+		width: 100%;
+
+		h1 {
+			padding-top: 20px;
+			font-size: 1.8em;
+		}
+
+		.contact-info {
+			margin-top: 55px;
+		}
+
+		.contact-presentation {
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		.experience .company-wrapper {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		.experience .job-wrapper {
+			width: 100%;
+			margin-bottom: 40px;
+		}
+		
+		.section-padding {
+			padding: 40px 10% 20px 5%;
+		}
+
+		.section-wrapper {
+			width: 100%;
+		}
+	  }
+	}
+	
+}
+
+.experience {
+	background: #3d3e42;
+	width: 60%;
+	float: left;
+	position: relative;
+	color: #9099a0;
+	font-weight: 300;
+	min-height: 100%;
+	min-height: 100vh;
+	.border;
+	
+
+	h3.experience-title {
+		color: #66cc99;
+		text-align: left;
+		text-transform: uppercase;
+		font-size: 1.2em;
+		margin-bottom: 20px;
+		font-weight: 400;
+		text-align: center;
+	  }
+
+	  .company-wrapper {
+		width: 30%;
+		float: left;
+		text-align: left;
+		padding-right: 5%;
+		margin-bottom: 60px;
+	  }
+
+	  .job-wrapper {
+		width: 70%;
+		float: left;
+		text-align: left;
+		padding-right: 5%;
+		margin-bottom: 60px;
+	  }
+
+	  .experience-title {
+		color: white;
+		margin-bottom: 15px;
+	  }
+
+	  .section-padding {
+		padding: 60px 60px 40px 40px;
+	  }
+	  
+	}
+
+	.section-wrapper {
+		width: 100%;
+		float: left;
+		text-align: left;
+		color: #9099a0;
+		font-weight: 300;
+		margin-bottom: 20px;
+		
+
+		h3.section-title {
+			color: #66cc99;
+			text-align: left;
+			text-transform: uppercase;
+			font-size: 1.2em;
+			margin-bottom: 20px;
+			margin-top: 0;
+			font-weight: 400;
+			text-align: center;
+		  }
+
+		  .skill {
+			margin-bottom: 10px;
+			position: relative;
+			text-align: center
+		  }
+	  }
+	  
